@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Javascript Quiz</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+		<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+	</head>
+	<body>
+		<div class="ui container text segment" style="margin-top: 12%">
+
+			<div class="ui form">
+				<div class="grouped fields">
+					<h3 class="question-text">Is Utkarsh handsome?</h3>
+					<div class="ui divider"></div>
+
+					<div class="field">
+						<div class="ui radio checkbox">
+							<input type="radio" name="answer1" class="answer1">
+							<label>Yes</label>
+						</div>
+					</div>
+
+					<div class="field">
+						<div class="ui radio checkbox">
+							<input type="radio" name="answer1" class="answer2">
+							<label>No</label>
+						</div>
+					</div>
+
+					<div class="field">
+						<div class="ui radio checkbox">
+							<input type="radio" name="answer1" class="answer3">
+							<label>lol?</label>
+						</div>
+					</div>
+
+					<div class="field">
+						<div class="ui radio checkbox">
+							<input type="radio" name="answer1" class="answer4">
+							<label>I'm way better looking than him</label>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="ui container segment correctness" style="visibility: hidden">
+				<h4>Answer is <span class="prepared-answer">Correct<span></h4>
+			</div>
+
+		</div>
+	</body>
+	<script type="text/javascript">
+		$('.ui.radio.checkbox').checkbox();
+	</script>
+</html>
